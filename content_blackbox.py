@@ -1,0 +1,135 @@
+BLACKBOX_BODY = """
+  <section class="hero sec-plain">
+    <div class="wrap">
+      <div class="kicker">A Signal Intelligence Agency</div>
+      <h1>Not a Black Box</h1>
+      <p class="lede">LIME is a rule-based trading copilot, <strong>not a black box</strong>. It reads price and volume, calculates a few classic indicators, and turns that into simple guidance you can inspect at every step.</p>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>What LIME Is</h2></div>
+      <div class="sec-body">
+        <p>LIME is a rule-based trading copilot, not a black box. It reads price and volume, calculates a few classic indicators &mdash; moving averages, RSI, MACD, ATR &mdash; and turns that into simple guidance: OK to hunt longs, caution, or storm. All logic is transparent Pine Script that any competent trader or programmer can read.</p>
+        <h3>What problem LIME solves</h3>
+        <p>Most traders drown in charts and emotions; LIME forces a consistent process. It answers three plain questions: what is the market regime, is this symbol aligned with the current, and if yes, how big and where is the stop/exit.</p>
+        <h3>What makes it different</h3>
+        <p>Multi-timeframe, rule-driven, auditable logs instead of gut feel. Built to be teachable: a one-page blueprint, clear states, and a testing plan investors can inspect.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>The LIME Decision Blueprint</h2></div>
+      <div class="sec-body">
+        <p>This is a high-level blueprint of how LIME thinks, from raw market data to a final trading or advisory decision, written so the full flow fits on one page. Every stage below is explainable and tied to known concepts &mdash; this is the &ldquo;not a black box&rdquo; heart of the system.</p>
+        <h3>1. Inputs &mdash; what LIME reads</h3>
+        <p>For a given symbol (for example, SPY), on each bar LIME pulls price (open, high, low, close), volume, and timeframes: Daily, 4-hour, and 15-minute (extendable to others). From these it computes, on each relevant timeframe: moving averages (20, 50, 200 period), RSI (default 14 period), MACD (12/26/9 standard), average volume (for example, 20-period), and ATR (Average True Range) for stop sizing. Everything downstream uses only these computed values.</p>
+        <h3>2. Trend engine &mdash; structural direction</h3>
+        <p>For each timeframe (Daily, 4H, 15m), LIME determines the basic trend: if price &gt; MA20 and MA20 &gt; MA50 and MA50 &gt; MA200, trend = UPTREND. If price &lt; MA20 and MA20 &lt; MA50 and MA50 &lt; MA200, trend = DOWNTREND. Otherwise, trend = NEUTRAL / RANGING. This is stored per timeframe (daily_trend, fourhr_trend, fifteen_trend), so for each timeframe we know: UP, DOWN, or NEUTRAL.</p>
+        <h3>3. Momentum engine &mdash; strength and health</h3>
+        <p>For each timeframe, using RSI and MACD: in an uptrend, RSI above 60 signals strong bullish momentum, 50&ndash;60 is moderate bullish, 40&ndash;50 is weak/warning, and below 40 is momentum disagreement. In a downtrend the bands mirror: below 40 is strong bearish, 40&ndash;50 moderate bearish, 50&ndash;60 weak/warning, above 60 is disagreement. A divergence check flags when price makes a higher high but RSI makes a lower high (bearish divergence), or price makes a lower low but RSI makes a higher low (bullish divergence). On MACD: MACD above zero, above signal, and a rising histogram means accelerating momentum; above zero, above signal, flat histogram means positive but stable; above zero but below signal means slowing momentum; below zero, below signal, falling histogram means accelerating bearish; below zero but above signal means slowing bearish. The result for each timeframe: trend direction plus momentum quality.</p>
+        <h3>4. Alignment engine &mdash; agreement across timeframes</h3>
+        <p>Using the trend outcomes: Daily, 4H, and 15m all UPTREND is perfect bullish alignment. Daily and 4H UPTREND with 15m NEUTRAL is a bullish bias waiting for a trigger. Daily UPTREND, 4H NEUTRAL, 15m UPTREND is tradable but with less conviction. Daily UPTREND against 4H DOWNTREND is a conflict &mdash; avoid or be very cautious. Bearish cases follow the same logic in reverse. This stage answers: are we swimming with the current or against it?</p>
+        <h3>5. Setup detector &mdash; potential trade zones</h3>
+        <p>On the lowest trading timeframe (for example, 15m), a long setup candidate requires: higher-timeframe context (Daily and/or 4H bullish), price near support (at or slightly above MA20/MA50), and no major bearish divergence on the higher timeframe. A short setup candidate mirrors this using downtrend and resistance. At this stage LIME is not entering yet &mdash; it is marking the chart as &ldquo;watch for entry trigger.&rdquo;</p>
+        <h3>6. Trigger engine &mdash; entry and exit decisions</h3>
+        <p>Within a valid setup zone, a BUY signal fires when all of the following are true: trend alignment passes minimum rules (for example, Daily and 4H bullish); price breaks above a local level (for example, 15m MA20 or a recent swing high); RSI on the 15m is above 50 but below 80 (momentum in favor, not yet exhausted); MACD on the 15m crosses above signal or the histogram turns positive; and volume on the breakout bar exceeds a threshold of the average (for example, 1.1&times;&ndash;1.25&times; the 20-bar average). A short entry trigger inverts this logic for downtrends. For an open long, LIME exits if any of the following occurs: price closes back below the key moving average used for entry; MACD on the trading timeframe crosses bearish; a predefined stop level is hit (entry minus N &times; ATR); or a target level (prior resistance or an R-multiple) is reached. At this point LIME has a binary answer per bar: ENTER LONG, ENTER SHORT, HOLD, or EXIT.</p>
+        <h3>7. Confidence scorer &mdash; how strong is this signal</h3>
+        <p>For each potential trade, LIME assigns a confidence score from 0&ndash;100 based on weighted factors: timeframe alignment score (up to 40%), RSI momentum score (up to 30%), MACD momentum score (up to 25%), volume confirmation score (up to 20%), and risk-reward quality score (up to 10%). These combine into a normalized score: 90&ndash;100 is Strong Buy/Strong Sell (full size allowed); 75&ndash;89 is Buy/Sell (normal size); 60&ndash;74 is Moderate (reduced size); 40&ndash;59 is Weak/Caution (tiny size, if any); below 40 is No Trade (signal suppressed).</p>
+        <h3>8. Position sizing engine &mdash; how much to risk</h3>
+        <p>Using confidence, ATR, and account size: LIME defines per-trade risk as a percent of equity (for example, 0.5&ndash;1%), computes stop distance from entry using structure or ATR, and sets position size as account risk per trade divided by stop distance. Higher confidence allows the full risk allotment; lower confidence scales the position down. This ensures you never blow up on a single trade, and bigger bets are reserved for higher-quality setups.</p>
+        <h3>9. Advisory layer &mdash; dashboard output</h3>
+        <p>From the engines above, LIME outputs human-readable guidance: market regime (Bullish/Bearish/Choppy/Ranging), bias (Risk-on/Neutral/Risk-off), and for each symbol &mdash; trend state on each timeframe, current signal (Buy/Sell/Hold/Avoid), confidence percentage, suggested stop level and first target, and a recommended position fraction (for example, 0.25, 0.5, or 1.0 of normal size). This is what the user actually sees; the rest runs under the hood.</p>
+        <h3>10. Logging and review</h3>
+        <p>Every executed signal is logged with timestamp, symbol, timeframe context (Daily/4H/15m trends), entry price, stop, target, confidence score and components, and exit reason (target, stop, time, reversal, or manual). This allows later performance analysis by regime, strategy refinement, and independent auditing by an investor.</p>
+        <p class="muted">In short: the blueprint is a pipeline from raw candles &rarr; computed indicators &rarr; trend and momentum &rarr; multi-timeframe agreement &rarr; setup &rarr; trigger &rarr; confidence &rarr; position size &rarr; plain-English advisory output, with a fully auditable trade log.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Evidence and Testing Path</h2></div>
+      <div class="sec-body">
+        <p>Evidence and a plan, not faith. Testing runs in layers, each tied to a capital tier and a success bar:</p>
+        <h3>Layer 1 &mdash; Signals ($0)</h3>
+        <p>Tests whether the logic behaves: indicators &rarr; signals on historical data. Success bar: profit factor &ge; 1.5, no obvious bugs.</p>
+        <h3>Layer 2 &mdash; API ($0&ndash;$2k)</h3>
+        <p>Tests whether LIME can talk to the broker: signal &rarr; order requests, no fills. Success bar: 100% responses, no errors.</p>
+        <h3>Layer 3 &mdash; Execution ($2k&ndash;$5k)</h3>
+        <p>Tests whether real trades fire correctly: order types, slippage, latency. Success bar: greater than 98% fills, less than 1 second latency, no rejections.</p>
+        <h3>Layer 4 &mdash; Profitability ($5k+)</h3>
+        <p>Tests whether the full pipeline makes money, live. Success bar: positive expectancy across regimes.</p>
+        <p>Backtests (converting an indicator to a strategy on TradingView) prove the logic and catch repainting or coding mistakes at zero cost. The pipe from LIME to the broker is tested in a paper or demo environment before risking a dollar. Micro-trades (single-share tests) prove the broker does exactly what LIME asks, with metrics on fill rate and speed. Only after those pass does the question become: can this produce positive returns, and under what market regimes?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>How You Can Check Us</h2></div>
+      <div class="sec-body">
+        <p>&ldquo;Trust me&rdquo; is not the standard here &mdash; &ldquo;here's exactly how you can verify me&rdquo; is.</p>
+        <h3>Source visibility</h3>
+        <p>LIME is Pine Script; investors may read the code or have an independent developer review it.</p>
+        <h3>Trade logs</h3>
+        <p>Every trade has a line: date/time, symbol, regime, signal, confidence, entry, stop, exit, and reason.</p>
+        <h3>Backtest reports</h3>
+        <p>Strategy tester outputs: equity curves, drawdown, win rate, profit factor, Sharpe ratio, along with symbol and timeframe.</p>
+        <h3>Regime tagging</h3>
+        <p>Performance is broken out by market regime (bull, bear, choppy) so results can be shown as more than just a bull-market toy.</p>
+        <h3>Independent replication</h3>
+        <p>Any TradingView user can load the scripts, run the same backtests, and confirm or challenge the results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>A Grandma-Level Example</h2></div>
+      <div class="sec-body">
+        <p>This is the &ldquo;show, don't tell&rdquo; walkthrough, kept to a few plain steps using SPY: LIME sees SPY in an uptrend on Daily and 4H, while the 15m is pulling back toward support. RSI and MACD say the pullback is normal, not a breakdown. Price bounces from support with strong volume, and LIME fires a BUY with medium-high confidence. The stop is set one ATR below the structure, size is set to 1% risk of the account, and the target is prior resistance. When price slows and MACD turns down, LIME issues an EXIT, and the trade and all context are logged.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>LimeHammer: Awareness Before Action</h2></div>
+      <div class="sec-body">
+        <p>LimeHammer is a simple, rules-based awareness tool for traders &mdash; especially beginners &mdash; who are ready to stop trading from emotion and start trading from alignment. Its job is not to flood you with signals, but to stand between you and your worst impulses, so you act from one clear plan instead of scattered reactions.</p>
+        <h3>What LimeHammer actually does</h3>
+        <p>It gives you a small rule set for when you are allowed to click buy or sell, and when you must stand down. It locks in fixed risk per trade so one mistake cannot erase a week of good behavior. It defines your lane &mdash; specific times, setups, and instruments &mdash; so you stop chasing every flashing light on the screen. And it tracks when you break your own rules, showing you those patterns so you can grow from scattered to unified behavior.</p>
+        <h3>The state of mind LimeHammer asks for</h3>
+        <p>Calm body, steady breath, and gathered attention are part of the system, not extras. You learn a short pre-trade routine: sit alert but not tense, breathe steadily, and bring attention back from &ldquo;what if&rdquo; and &ldquo;if only&rdquo; into this moment. Over time this reduces panic, revenge trades, and &ldquo;I don't know what came over me&rdquo; decisions.</p>
+        <h3>A simple day with LimeHammer</h3>
+        <p>Before the open: run a short body-and-breath routine and review today's rules and instruments. During your window: let the assistants watch; you only consider trades inside their pings. At the click: risk is pre-sized; you confirm the setup matches your rules or you stand down. After the session: review which trades matched the plan and which did not, so tomorrow you are a little more unified than today.</p>
+        <h3>Who LimeHammer is for</h3>
+        <p>Traders who have hurt an account once and never want to repeat it. People who know discipline matters but cannot &ldquo;willpower&rdquo; their way into it alone. Beginners who want simple, honest rules and a calm guiding presence instead of hype.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Reading the Dashboard, Step by Step</h2></div>
+      <div class="sec-body">
+        <p>The LIME dashboard is one full-market analysis system, walked in reverse order of the decision-making process:</p>
+        <h3>Step 5 &mdash; the final answer</h3>
+        <p>Lime 7 Stop Watcher III&trade;, with its Rank + Vote system showing CAND / AVOID / WATCH / HOLD &mdash; the clear action item at the end of the read.</p>
+        <h3>Step 4 &mdash; the context</h3>
+        <p>Lime Color Weather&trade;, showing market conditions such as &ldquo;bull cooling&rdquo; or &ldquo;strong bull rising&rdquo; &mdash; understanding whether the environment is favorable.</p>
+        <h3>Step 3 &mdash; trend confirmation</h3>
+        <p>Lime 3 Multi-Timeframe Trends, showing whether movements are consistent across timeframes.</p>
+        <h3>Step 2 &mdash; the leaders</h3>
+        <p>Lime 4 Rebounder&trade; and Index Trends, identifying which sectors are strongest.</p>
+        <h3>Step 1 &mdash; the watchlist</h3>
+        <p>Lime 12 MaxSize Grid&trade;, showing personalized portfolio status with Breached / Near Stop / Full / Add Small alerts.</p>
+        <p class="muted">Core indicators tell you what and when; supporting indicators provide quality checks and risk management &mdash; core indicators carry the melody, supporting indicators add depth and catch what the main tools might miss.</p>
+      </div>
+    </div>
+  </section>
+"""

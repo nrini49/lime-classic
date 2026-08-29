@@ -1,0 +1,109 @@
+UNIQUEPERF_BODY = """
+  <section class="hero sec-plain">
+    <div class="wrap">
+      <div class="kicker">Unified Signal Solutions</div>
+      <h1>Unique High-Performance</h1>
+      <p class="lede">Specialized, custom-built tools &mdash; TradingView indicators built and integrated for real working households &mdash; that fit together so each tool tells the day's posture in plain English.</p>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>The Official Moneytree Manual</h2></div>
+      <div class="sec-body">
+        <p>A clean, grandma-ready user manual for the top, mid, and lower pane indicators &mdash; what each one is for, how and when to use it, and a short tip to keep it honest in practice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Top Pane Indicators</h2></div>
+      <div class="sec-body wide">
+        <h3>Lime Color Weather&trade; &mdash; Market Weather Bands</h3>
+        <p><strong>Goal:</strong> Color Weather shows the current market &ldquo;weather&rdquo; so we know whether conditions favor buying, holding, or staying small. <strong>How and when:</strong> keep it on at all times and check it before any entry, exit, or position size decision so your actions match the current regime. <strong>Tip:</strong> trade boldly only in friendly weather; in storms, use your smallest size.</p>
+
+        <h3>Lime 8 Filter Stack&trade; &mdash; Safety Gate</h3>
+        <p><strong>Goal:</strong> Filter Stack combines several safety checks into a single pass/fail view so we do not enter shaky trades. <strong>How and when:</strong> look at it right before opening or adding to any position; act only when the stack is mostly supportive, and stand aside when it is mixed or negative. <strong>Tip:</strong> mixed signals mean instant wait mode &mdash; no trade beats a forced trade.</p>
+
+        <h3>Lime 5 StopWatcher I&trade; &mdash; First Stop</h3>
+        <p><strong>Goal:</strong> StopWatcher I gives a clear, rule-based first stop level so risk is defined before the trade begins. <strong>How and when:</strong> use it at entry to place your protective stop exactly where the model suggests, and check that the dollar risk matches your account rules. <strong>Tip:</strong> set the stop, then honor it &mdash; never widen stops after entry.</p>
+
+        <h3>Lime 6 StopWatcher II&trade; &mdash; Trailing Guard</h3>
+        <p><strong>Goal:</strong> StopWatcher II provides a disciplined trailing stop path that locks in progress as price moves in our favor. <strong>How and when:</strong> switch focus to it after a trade has gained enough; move your stop along its guidance instead of guessing when to protect profits. <strong>Tip:</strong> let winners pay for future tries &mdash; trail stops, don't chase every tick.</p>
+
+        <h3>Lime 7 StopWatcher III&trade; &mdash; Harvest Line</h3>
+        <p><strong>Goal:</strong> StopWatcher III highlights zones where a mature move is likely ending so we can harvest or tighten risk. <strong>How and when:</strong> watch it when a trade has run well or feels stretched; use it to decide where to take profits or clamp down your stop aggressively. <strong>Tip:</strong> grateful exits beat perfect exits &mdash; trim size when moves feel extreme.</p>
+
+        <h3>Date and Price Range Tool (Top Pane) &mdash; Swing Ruler</h3>
+        <p><strong>Goal:</strong> the range tool measures how far and how long a chosen swing has moved, giving exact percent and time. <strong>How and when:</strong> draw the box from swing start to swing end whenever you study a move, so you can compare it against other swings and set realistic targets. <strong>Tip:</strong> big moves usually need real time &mdash; tiny time plus huge move, be cautious.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Mid Pane Indicators</h2></div>
+      <div class="sec-body wide">
+        <h3>Date and Price Range (Mid Pane) &mdash; Wave Ruler</h3>
+        <p><strong>Goal:</strong> gives a clean measure of the exhaustion wave being studied (how far, how long). <strong>How and when:</strong> wrap the exhaustion segment with the box so you can see &ldquo;this last push was X% over Y days&rdquo; and judge fatigue. <strong>Tip:</strong> tired waves often rhyme in size &mdash; shorter waves after giants signal caution.</p>
+
+        <h3>Lime Color Weather&trade; (mid) &mdash; Trunk Weather</h3>
+        <p><strong>Goal:</strong> here, Color Weather tells us whether exhaustion waves are forming with or against the larger trend. <strong>How and when:</strong> always keep it visible; treat tired readings in up-weather differently than tired readings in down-weather. <strong>Tip:</strong> tired in uptrends favors gentle trims; tired in downtrends favors full exits.</p>
+
+        <h3>Lime 3 Ark&trade; &mdash; Position Ark</h3>
+        <p><strong>Goal:</strong> Ark lays out a safe position plan for the current move &mdash; how big to be and how to carry it. <strong>How and when:</strong> consult Ark before committing size; use its guidance to choose initial size, add-zones, and when the trip is probably complete. <strong>Tip:</strong> let the Ark cap your ambition &mdash; size first, story second, always.</p>
+
+        <h3>Lime 9 Exhaustion&trade; &mdash; Tiredness Gauge</h3>
+        <p><strong>Goal:</strong> Exhaustion shows whether a move is fresh, mid-journey, or worn out, so we avoid buying the last gasp. <strong>How and when:</strong> check it before entering and before taking profits; favor entries when readings are refreshed and respect exits when exhaustion is high. <strong>Tip:</strong> respect tired signals over gut feelings &mdash; fresh energy beats late chasing, always.</p>
+
+        <h3>Lime 12 MaxSize Grid&trade; &mdash; Size Limits</h3>
+        <p><strong>Goal:</strong> MaxSize Grid defines the largest allowed position for each situation so no single idea can threaten the account. <strong>How and when:</strong> use whenever planning a trade; look up the symbol's current row and never exceed that size, even when a trade feels &ldquo;certain.&rdquo; <strong>Tip:</strong> hard limits protect you from yourself &mdash; big conviction, same max size rules.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Lower Pane Indicators</h2></div>
+      <div class="sec-body wide">
+        <h3>Lime Color Weather&trade; (lower) &mdash; Roots Weather</h3>
+        <p><strong>Goal:</strong> in the lower pane, Color Weather keeps the same regime story under all watchlists and rotation tools. <strong>How and when:</strong> leave it on; read leadership and rotation differently in good weather versus storms, and adjust aggressiveness accordingly. <strong>Tip:</strong> strong roots need friendly soil conditions &mdash; in bad soil, prune risk ruthlessly.</p>
+
+        <h3>Lime Watch Session &mdash; Session Rhythm</h3>
+        <p><strong>Goal:</strong> Watch Session shows which part of the trading day or week we are in and how that slice usually behaves. <strong>How and when:</strong> use intraday or across days to decide when to be most active, when to fade noise, and when to stand aside. <strong>Tip:</strong> trade your best hours, skip junk hours &mdash; quiet windows deserve smaller expectations.</p>
+
+        <h3>Lime 2 Navigation Sensor Array&trade; &mdash; Radar Board</h3>
+        <p><strong>Goal:</strong> Nav Sensor Array gives a cockpit-style radar of key indexes, sectors, or assets so we see where force is coming from. <strong>How and when:</strong> use at the start of each session and before any new trade to see which side of the market is in control. <strong>Tip:</strong> fly with the wind, not against it &mdash; ignore outliers when radar mostly agrees.</p>
+
+        <h3>Lime 4 Rebounder&trade; &mdash; Bounce Hunter</h3>
+        <p><strong>Goal:</strong> Rebounder highlights zones where sharp selloffs or runs are likely to bounce, offering controlled counter-moves. <strong>How and when:</strong> use after volatility spikes or pullbacks; stalk rebounds only when Rebounder says the &ldquo;floor&rdquo; is likely nearby and the weather is not hostile. <strong>Tip:</strong> bounce trades demand smaller size always &mdash; skip rebounds during outright storm regimes.</p>
+
+        <h3>Lime 10 Rotation Ballroom&trade; &mdash; Dance Floor Map</h3>
+        <p><strong>Goal:</strong> Rotation Ballroom shows how money is rotating among groups so we can move with the flow instead of guessing. <strong>How and when:</strong> use for swing and position trading; move capital toward the leaders entering the ballroom and away from tired dancers. <strong>Tip:</strong> rotate patiently, not every single day &mdash; favor fresh leaders over exhausted stars.</p>
+
+        <h3>Lime 11a Sector-Index Leads&trade; &mdash; Leaderboard</h3>
+        <p><strong>Goal:</strong> Sector-Index Leads ranks sectors and indexes so we immediately know who is leading and who is lagging. <strong>How and when:</strong> use in the daily review; prefer trades aligned with the current leaders and avoid chronic laggards unless bottom-fishing by rule. <strong>Tip:</strong> leaders deserve first place in watchlists &mdash; laggards are guilty until proven strong.</p>
+
+        <h3>Lime 11b Rank+Vote Ballroom&trade; &mdash; Consensus Score</h3>
+        <p><strong>Goal:</strong> Rank+Vote combines several models into one conviction score, so you see a simple &ldquo;who wins&rdquo; number. <strong>How and when:</strong> use as the final tie-breaker when choosing among candidates; the highest rank+vote gets attention first. <strong>Tip:</strong> let the votes break stubborn ties &mdash; top scores get attention, not guarantees.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>How the Moneytree Fits Together</h2></div>
+      <div class="sec-body">
+        <p>Across all panes, each tool either tells us the goal of the trade, tells us how big to be, or tells us whether the season is right for this kind of fruit. Lime runs on a tight fleet of indicators &mdash; the majority custom-built Lime tools for real working households, not hedge funds.</p>
+        <p>Grouped by function:</p>
+        <ul>
+          <li><strong>Market Weather &amp; Posture</strong> &mdash; Lime Market Now, Lime Weatherstrip, Lime Index Watcher &mdash; helps you size today's risk and pace your trading day in under five minutes.</li>
+          <li><strong>Leadership, Heat, and Rotation</strong> &mdash; Lime Leaders Squeezed, Lime Multi-Sector Rebound Dashboard, Lime Not-Hot Scanner &mdash; shows where money is really flowing, not just what is loud on financial TV.</li>
+          <li><strong>Exhaustion, Risk, and Losers</strong> &mdash; warns you when the tape is tired so you can trim, protect, or simply do less.</li>
+          <li><strong>Personal Map &amp; Workflow</strong> &mdash; Lime Intraday PowerScan, Lime Personal Heat Map, Lime Notify &mdash; keeps your own watchlist, alerts, and intraday plan aligned with the bigger weather.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+"""
