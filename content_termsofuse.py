@@ -1,0 +1,128 @@
+TERMSOFUSE_BODY = """
+  <section class="hero sec-plain">
+    <div class="wrap">
+      <div class="kicker">Trusted &amp; Innovative</div>
+      <h1>Terms of Use</h1>
+      <p class="lede">Lime Signalworks LLC ("we," "us," or "our") owns and operates limesignalworks.com and other sites linking to these Terms of Use (individually, the "Site" and collectively, the "Sites"). Through the Sites, Lime Signalworks LLC provides various offerings, information, and resources related to the products and services available on our Sites (each a "Service" and collectively, the "Services"). References to the Sites include the Services.</p>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Informational Purposes Only</h2></div>
+      <div class="sec-body">
+        <p>Information and tools provided through the Sites and Services are for informational and educational purposes only and do not constitute investment, trading, legal, tax, or financial advice or a recommendation to buy, sell, or hold any security or financial product. You are solely responsible for your trading and investment decisions and any resulting gains or losses.</p>
+        <p>Lime Signalworks LLC may change, suspend, modify, or discontinue all or any part of the Sites in its sole discretion with or without notice. Lime Signalworks LLC is not liable if all or any part of a Site is, for any reason, unavailable at any time or for any period. Lime Signalworks LLC reserves the right to block or deny access to any of the Sites to anyone at any time for any reason. Lime Signalworks LLC is not obligated to correct or update any information or content on the Sites.</p>
+        <p class="muted">Market data, indicators, signals, and other market-related information may be delayed, incorrect, incomplete, or unavailable, and Lime Signalworks LLC does not warrant the accuracy, timeliness, or completeness of any such information.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>General Terms</h2></div>
+      <div class="sec-body">
+        <p>These terms of use (together with any additional terms, as described below) ("Terms of Use") are an agreement between Lime Signalworks LLC and the individuals that use the Sites (or the parent/legal guardian of any such individuals under the age of 18) ("users," "you," or "your"). The Terms of Use govern your access to and use of the Sites.</p>
+        <p>Subject to your full and ongoing compliance with these Terms of Use, Lime Signalworks LLC hereby grants you a limited, non-transferable, non-exclusive, and revocable right to access and use the Sites, solely for their intended purposes. If you use or access the Sites on behalf of a business or other entity, you represent and warrant that you have authority to bind that business or entity, and in such case, the term "you" includes the business or entity and any of its agents that use or access the Sites.</p>
+        <p>By using or accessing the Sites, you represent and warrant that you are of legal age to accept these Terms of Use and form a binding contract with Lime Signalworks LLC, or that your parent or legal guardian accepts these Terms of Use on your behalf.</p>
+        <p class="muted">IF YOU ARE UNDER THE AGE OF 18 (A MINOR), YOUR PARENT OR LEGAL GUARDIAN MUST READ AND CONSENT TO THE TERMS OF USE BEFORE YOU USE THE SITES. BY PERMITTING A MINOR TO USE THE SITES, THE MINOR'S PARENT OR LEGAL GUARDIAN BECOMES SUBJECT TO THE TERMS OF USE AND AGREES TO BE RESPONSIBLE FOR THE MINOR'S ACTIVITIES ON THE SITES.</p>
+        <p class="muted">THE SITES ARE NOT INTENDED FOR CHILDREN UNDER 13, AND WE DO NOT KNOWINGLY COLLECT PERSONAL INFORMATION FROM CHILDREN UNDER 13. IF YOU ARE A PARENT OR LEGAL GUARDIAN AND YOU PERMIT A MINOR TO USE THE SITES, YOU AGREE THAT YOU ARE FULLY RESPONSIBLE FOR THE MINOR'S USE OF THE SITES, INCLUDING ALL ACTIVITIES, USER CONTENT, AND ANY PURCHASES.</p>
+        <p>We may now or in the future offer multiple platforms (the "Lime Signalworks LLC Platforms") through our Sites for use in accessing our Services. To use the Platforms, you must adhere to any additional terms and conditions specific to each Platform, as identified below and/or presented to you at the time you use the Platforms. Certain offerings on the Sites may be free of charge or offered for a fee, and we reserve the right to change what Services are offered free of charge or for a fee, and the fees charged for any given Service.</p>
+        <p class="muted">PLEASE READ THE TERMS OF USE CAREFULLY. BY ACCESSING ANY PAGES ON THE SITES; CREATING AN ACCOUNT; USING ANY SERVICES MADE AVAILABLE THROUGH THE SITES; POSTING, SUBMITTING, TRANSMITTING, OR UPLOADING ANY INFORMATION OR CONTENT THROUGH THE SITES; OR USING ANY PLATFORM, YOU EXPRESSLY AGREE THAT YOU, OR YOUR PARENT OR LEGAL GUARDIAN FOR USERS UNDER THE AGE OF 18, HAVE READ, UNDERSTAND, AND AGREE TO THE TERMS OF USE AND ANY APPLICABLE POLICIES AND DISCLAIMERS REFERENCED HEREIN OR ON THE SITES. DO NOT USE THE SITES IF YOU DO NOT AGREE TO THE TERMS OF USE AND ALL APPLICABLE POLICIES AND DISCLAIMERS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Changes to the Terms of Use</h2></div>
+      <div class="sec-body">
+        <p>As stated above, Lime Signalworks LLC reserves the right to update or modify the Terms of Use at any time, with or without prior notice. Any such changes will become effective upon the earlier of (i) the first time you use the Sites or Services with actual notice of the change(s), or (ii) 30 days after the change(s) are publicly posted on the Sites. Disputes arising under these Terms of Use will be resolved in accordance with the version of the Terms of Use in place at the time the dispute arose. We use reasonable efforts to ensure that the Terms of Use identify the last date of update.</p>
+        <p>In the case of material changes to the Terms of Use, Lime Signalworks LLC will make reasonable efforts to notify you of the change, such as by sending an email to any address we have on file, displaying a pop-up window on the Sites, or using another similar mechanism. We encourage you to review the Terms of Use frequently to stay informed of any changes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Account Access and Security</h2></div>
+      <div class="sec-body">
+        <p>You may be required to register and create an account to access some content and functionality on the Sites and/or Platforms. You may be required to provide personal information, such as an email address and password, to create an account, as described in our Privacy Notice.</p>
+        <p>You are responsible for maintaining the confidentiality of your account, password, and other information. By creating an account, you agree that such account is intended for your use only, and you agree not to allow any other person to access it. You agree to notify Lime Signalworks LLC immediately if you become aware of any unauthorized access to or use of your account. You may be required to log out from your account at the end of each session. You should use caution when accessing your account from a public or shared computer so that others are not able to view or access your information. Lime Signalworks LLC may disable an account at any time in its sole discretion. Circumventing account access controls may be a violation of law.</p>
+        <p>Any information you provide to Lime Signalworks LLC must be correct, current, and complete. Our use of your information is governed by our Privacy Notice. By providing us with personal information, you consent to our use of such information as described in our Privacy Notice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>User Content</h2></div>
+      <div class="sec-body">
+        <p>The Sites may now or in the future contain Services that use information you have provided to Lime Signalworks LLC and that allow you and others to post, submit, publish, display, or otherwise transmit ("post") various information and materials ("User Content"), which may include answers in response to questions, comments, documents, and other similar content.</p>
+        <p>Other than personally identifiable information that you provide to us and except as expressly provided in these Terms of Use or the policies applicable to any Lime Signalworks LLC Platform, User Content is and will be considered non-confidential and non-proprietary. You retain ownership rights in and to your User Content, and by posting User Content to the Sites, you hereby grant Lime Signalworks LLC an unrestricted, non-exclusive, perpetual, royalty-free, worldwide, transferable, sublicensable, and irrevocable license and right, but not an obligation, to use, edit, alter, copy, reproduce, disclose, display, publish, prepare derivative works from, perform, market, distribute, exhibit, broadcast, or otherwise use such User Content and derivatives thereof, in whole or in part, and in any form, media, or technology now known or hereafter developed.</p>
+        <p class="muted">You should not post any sensitive personal, financial, or account information as User Content, and if you do so, you do so at your own risk.</p>
+        <p>Lime Signalworks LLC is under no obligation to use, return, review, or respond to User Content. You understand and acknowledge that you are responsible for any User Content you post. By providing User Content, you represent and warrant that: (a) you own or control all rights in and to such User Content; (b) you have the right to grant Lime Signalworks LLC the license to such User Content that is described above; and (c) the User Content you provide does and will comply with these Terms of Use, including the Content Standards below. You have full responsibility for such content, including its legality, reliability, accuracy, and appropriateness, as further explained in the Content Standards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Reliance on Posted Information</h2></div>
+      <div class="sec-body">
+        <p>The Sites may include content provided by persons or entities other than Lime Signalworks LLC ("third parties"). Other than content provided by Lime Signalworks LLC, all statements and/or opinions expressed, including all articles, responses to questions, and other content, are solely the opinions and the responsibility of the party providing those materials. Lime Signalworks LLC is not responsible for the content of any materials provided by third parties, and Lime Signalworks LLC does not warrant the accuracy, completeness, or reliability of any such information.</p>
+        <p>Information provided by Lime Signalworks LLC on the Sites is informational only. Lime Signalworks LLC does not guarantee the accuracy, completeness, or usefulness of information provided on the Sites, and you acknowledge that any reliance you place on such information is at your own risk.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Content Standards</h2></div>
+      <div class="sec-body">
+        <p>You agree that you will not post any User Content that (a) infringes on or violates any intellectual property rights, (b) fails to comply with applicable laws and regulations, or (c) contains any expressions of hate, abuse, offensive images or conduct, or any similar content.</p>
+        <p>Without limiting the foregoing, User Content must not:</p>
+        <ul>
+          <li>contain any defamatory, libelous, slanderous, obscene, indecent, abusive, offensive, harassing, violent, hateful, inflammatory, sexually explicit, pornographic, or otherwise objectionable (as determined by Lime Signalworks LLC in its sole discretion) material;</li>
+          <li>promote violence or discrimination based on race, ethnicity, sex, religion, nationality, disability, sexual orientation, gender identity, or age;</li>
+          <li>violate any person's or entity's legal rights (including intellectual property rights, moral rights, and rights of publicity and privacy);</li>
+          <li>impersonate any person or entity;</li>
+          <li>misrepresent your identity or affiliation or the identity or affiliation of any other entity;</li>
+          <li>appear as if it is posted by or endorsed by Lime Signalworks LLC or any other person or entity, if this is not the case;</li>
+          <li>be likely to or designed to deceive any person or entity;</li>
+          <li>contain any material that is unlawful or could result in civil or criminal liability;</li>
+          <li>incite, advocate, promote, contribute to, enable, or assist any illegal or unlawful activity;</li>
+          <li>involve commercial activities or sales, such as contests, sweepstakes, and other sales promotions, barter, or advertising, other than as conducted by Lime Signalworks LLC in its operation of the Sites; or</li>
+          <li>conflict with these Terms of Use or any other applicable law or policy.</li>
+        </ul>
+        <p class="muted">Lime Signalworks LLC reserves the right, but not the obligation, to monitor, remove, or refuse to post any User Content for any or no reason, in its sole discretion.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Governing Law and Jurisdiction</h2></div>
+      <div class="sec-body">
+        <p>You agree that all matters relating to the Sites, the Services, and these Terms of Use, and any dispute or claim arising out of or relating thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of the State of Ohio, without giving effect to any choice or conflict of law provision or rule (whether of the State of Ohio or any other jurisdiction).</p>
+        <p>You agree that the state and federal courts located in Franklin County, Ohio shall have exclusive jurisdiction over any such dispute or claim, and you hereby consent to the personal jurisdiction of such courts and waive any objection to venue in such courts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-plain">
+    <div class="wrap">
+      <div class="sec-bar"><h2>Subscriptions, Payments, and Refunds</h2></div>
+      <div class="sec-body">
+        <p>Some Services on the Sites are offered on a paid subscription basis, including but not limited to monthly alert services and higher-tier access plans. Current subscription tiers may include, for example, a standard alerts subscription and a premium or pilot access subscription, each with its own price and features as described on the Sites at the time you sign up.</p>
+        <p>All prices, features, and subscription offerings are subject to change at any time in our sole discretion. Any changes to pricing or features will apply on a prospective basis and will not change the price of a subscription term you have already paid for, but may apply to renewals.</p>
+        <p>By starting a paid subscription, you authorize Lime Signalworks LLC and our payment processor to charge the payment method you provide for the applicable subscription fees, taxes, and any other charges related to your use of the paid Services. Subscription fees are typically charged in advance on a recurring basis (for example, monthly) until you cancel.</p>
+        <p>You may cancel a subscription at any time by following the cancellation instructions provided on the Sites or through your account settings. If you cancel, your access to the applicable paid Services will continue through the end of your then-current billing period, and your subscription will not renew. You are responsible for all charges incurred before cancellation becomes effective.</p>
+        <p class="muted">Except where required by applicable law, all payments are final and non-refundable. We do not provide refunds or credits for partial subscription periods, unused Services, or dissatisfaction with trading outcomes or performance.</p>
+        <p>We may, in our sole discretion, issue a refund or credit where there has been a verified technical error that prevented you from accessing the paid Services you purchased for a material portion of your billing period. Any such refund or credit, if offered, is voluntary, one-time, and does not create an obligation for future refunds or credits in similar or other circumstances.</p>
+        <p>You understand and agree that paying for a subscription or other Service does not guarantee any particular trading results, profits, performance, or outcomes. You are solely responsible for your trading and investment decisions and any resulting gains or losses, regardless of whether you used our paid or free Services.</p>
+      </div>
+    </div>
+  </section>
+
+"""

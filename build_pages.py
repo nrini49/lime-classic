@@ -17,6 +17,10 @@ PAGES = [
     ("alignment.html", "Alignment", "/alignment.html"),
     ("coherence.html", "Coherence", "/coherence.html"),
     ("lime-shop.html", "Lime Shop", "/lime-shop.html"),
+    ("services.html", "Services", "/services.html"),
+    ("still-skeptical.html", "Still Skeptical", "/still-skeptical.html"),
+    ("privacy-policy.html", "Privacy Policy", "/privacy-policy.html"),
+    ("terms-of-use.html", "Terms of Use", "/terms-of-use.html"),
 ]
 
 LOGO_SVG = '''<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 L14 8 L12 6 L10 8 Z"/><rect x="9" y="14" width="6" height="4" rx="1"/><circle cx="12" cy="9" r="2.2"/></svg>'''
@@ -34,6 +38,10 @@ def nav_links(active_file):
         ("alignment.html", "Alignment"),
         ("coherence.html", "Coherence"),
         ("lime-shop.html", "Lime Shop"),
+        ("services.html", "Services"),
+        ("still-skeptical.html", "Still Skeptical"),
+        ("privacy-policy.html", "Privacy Policy"),
+        ("terms-of-use.html", "Terms of Use"),
     ]
     out = []
     for href, label in items:

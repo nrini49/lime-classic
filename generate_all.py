@@ -10,6 +10,10 @@ from content_aboutlime import ABOUTLIME_BODY
 from content_alignment import ALIGNMENT_BODY
 from content_coherence import COHERENCE_BODY
 from content_limeshop import LIMESHOP_BODY
+from content_services import SERVICES_BODY
+from content_stillskeptical import STILLSKEPTICAL_BODY
+from content_privacypolicy import PRIVACYPOLICY_BODY
+from content_termsofuse import TERMSOFUSE_BODY
 
 assert len(INDICATORS) == 12
 
@@ -72,6 +76,30 @@ write_page(
     "Lime Shop",
     "Lime Shop: charter membership and current promotions, archived as a static descriptive page.",
     LIMESHOP_BODY,
+)
+write_page(
+    "services.html",
+    "Services",
+    "Lime Signalworks services: Real-Time Market Alerts and Trade Automation Tech, plus the plain-language refund terms and office contact details.",
+    SERVICES_BODY,
+)
+write_page(
+    "still-skeptical.html",
+    "Still Skeptical",
+    "Still Skeptical: Marty's letter to Grandma, a brother's honest business-minded look at LIME, in Noal's own voice.",
+    STILLSKEPTICAL_BODY,
+)
+write_page(
+    "privacy-policy.html",
+    "Privacy Policy",
+    "Lime Signalworks LLC's Privacy Policy: what information is collected, how it is used and shared, and your privacy rights.",
+    PRIVACYPOLICY_BODY,
+)
+write_page(
+    "terms-of-use.html",
+    "Terms of Use",
+    "Lime Signalworks LLC's Terms of Use: site access, account security, user content, content standards, governing law, and subscription terms.",
+    TERMSOFUSE_BODY,
 )
 
 print("done")
