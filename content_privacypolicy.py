@@ -133,7 +133,7 @@ PRIVACYPOLICY_BODY = """
         <p>If you have questions about this Privacy Policy, your personal information, or our data practices, you can contact:</p>
         <p><strong>LimeSignalWorks LLC</strong><br>
         Email: <a href="mailto:contact@limesignalworks.com">contact@limesignalworks.com</a><br>
-        Location: Pickerington, Ohio, USA</p>
+        Location: 2722 Erie Ave, Suite 219, Cincinnati, OH 45208</p>
       </div>
     </div>
   </section>
