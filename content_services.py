@@ -3,24 +3,21 @@ SERVICES_BODY = """
     <div class="wrap">
       <div class="kicker">Truly Innovative Signal Solutions</div>
       <h1>Services</h1>
-      <p class="lede">Two ways to work with Lime, plus the plain-language refund rules that apply to both.</p>
+      <p class="lede">One way to work with Lime, plus the plain-language refund rules that apply to it.</p>
     </div>
   </section>
 
   <section class="sec-plain">
     <div class="wrap">
-      <div class="sec-bar"><h2>Real-Time Market Alerts</h2></div>
+      <div class="sec-bar"><h2>Keelwise</h2></div>
       <div class="sec-body">
-        <p>Access real-time data, daily alert updates, Harbor Now, and expert insights for $20/month.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec-plain">
-    <div class="wrap">
-      <div class="sec-bar"><h2>Trade Automation Tech</h2></div>
-      <div class="sec-body">
-        <p>Upgrade your trading with our AI-driven automation platform. Daily alert updates, Harbor Now, custom tools and support, and expert insights for $200/month.</p>
+        <p>Keelwise is our trading assistant: it watches the market, proposes trades for your approval, and protects every approved buy with stops held at your broker. Daily alert updates, Harbor Now, custom tools, and support are included.</p>
+        <ul>
+          <li>One price: $3,300, paid over 18 months ($183.33 a month). After 18 payments, Keelwise is yours to keep.</li>
+          <li>Cancel any time, no questions asked. If payments stop, Keelwise pauses until they resume.</li>
+          <li>From month 19, maintenance of $330 a year covers software updates and the daily market report.</li>
+          <li>Start with a free 33-day evaluation on a paper account. Call or email us to arrange it.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -35,7 +32,7 @@ SERVICES_BODY = """
         <ul>
           <li>You have 14 days from purchase to request a refund or return.</li>
           <li>After 30 days, refunds are only made if required by law or in rare special cases.</li>
-          <li>Late refunds (2+ months of use but under 1 year) are charged at $136/month for time used.</li>
+          <li>You can cancel Keelwise payments at any time; cancelling stops future payments and pauses Keelwise.</li>
         </ul>
 
         <h3>What's returnable</h3>

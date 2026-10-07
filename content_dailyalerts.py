@@ -44,7 +44,7 @@ DAILYALERTS_BODY = """
           <li>On good days and bad, your worth is never the day's result; it's how clearly you see, how honestly you act, and how gently you carry your people.</li>
           <li>Lime Market Today is where those worlds meet: real numbers on the screen and a calm voice at your shoulder, walking with you from valley to peak and back again.</li>
         </ul>
-        <p>A daily, AI-generated Market Today email for Lime's $20 subscribers lands in the subscriber inbox each market morning.</p>
+        <p>A daily, AI-generated Market Today email for Keelwise subscribers lands in the subscriber inbox each market morning.</p>
         <p class="muted">There's nothing like LIME, nor any knowing needed more than LIME.</p>
       </div>
     </div>
